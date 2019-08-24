@@ -1,1 +1,53 @@
-<h1>Hello World</h1>
+<style>
+    .backgrd {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:#3B3500;
+        animation-name: backgrddiv;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .loading {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #FAE100;
+        height: 5rem;
+        width: 15rem;
+        animation-name: blink;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    p {
+        text-align: center;
+        font-family: monospace;
+        font-size: 2rem;
+
+    }
+
+    @keyframes backgrddiv {
+        50% {
+            background: #5C5300;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            background: #E0CA00;
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<div class="backgrd"></div>
+<div class="loading"><p>Work in progress</p></div>
