@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "roboto";
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+html {
+	overlap: auto;
+}
+
+#navbar {
+  top:0;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar>ul {
+  display: flex;
+  float: left;
+  list-style-type: none;
+}
+
+#navbar .code{
+  color:transparent;
+}
+
+#navbar a:hover .code{
+  color:orange;
+  transition:color,0.8s,ease out;
+}
+
+#navbar li {
+  padding: 0.5rem;
+}
+
+#navbar a {
+  color: #E3EFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #4B535E;
+  animation-name: backgd;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgd {
+  0% {
+    background-color: #262B30;
+  }
+  50% {
+    background-color: #3E464F;
+  }
+  100% {
+    background-color: #262B30;
+  }
+}
+
+#welcome-section>h1 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  color: #C9E1FF;
+  font-size: 3rem;
+}
+
+body {
+  display: flex;
+  flex-direction:column;
+  height: 100vh;
+}
+
+#profile-desc {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #778899;
+}
+
+#profile-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-link a{
+  padding: 2rem;
+  text-decoration:none;
+}
+
+#profile-link .btn-contact-details:hover{
+-webkit-transform: scale(1.5) rotateZ(5deg);
+-ms-transform: scale(1.5) rotateZ(5deg);
+transform: scale(1.5) rotateZ(5deg);
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+  color: #778899;
+}
+
+
