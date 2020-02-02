@@ -37,11 +37,11 @@ html {
   list-style-type: none;
 }
 
-#navbar .code{
+#navbar .code {
   color:transparent;
 }
 
-#navbar a:hover .code{
+#navbar a:hover .code {
   color:orange;
   transition:color,0.8s,ease out;
 }
@@ -60,7 +60,7 @@ html {
 #welcome-section {
   width: 100%;
   height: 100vh;
-  background-color: #4B535E;
+  background-color:#4B535E;
   animation-name: backgd;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -110,11 +110,38 @@ body {
   text-decoration:none;
 }
 
-#profile-link .btn-contact-details:hover{
--webkit-transform: scale(1.5) rotateZ(5deg);
--ms-transform: scale(1.5) rotateZ(5deg);
-transform: scale(1.5) rotateZ(5deg);
+@keyframes profilecolor {
+  0% {
+    color: #464F59;
+  }
+  50% {
+    color: orange;
+  }
+  100% {
+    color: #464F59;
+  }
 }
+
+#profile-link .btn-contact-details:hover {
+-webkit-transform: scale(1.5);
+-ms-transform: scale(1.5);
+transform: scale(1.5);
+animation-name: profilecolor;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+
+
+/* Sets the color of the fa icon */
+.fab {
+  color: #464F59;
+}
+
+#profile-link > a {
+  color: #464F59;
+}
+
 
 footer {
   display:flex;
